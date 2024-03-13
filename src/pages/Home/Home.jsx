@@ -49,7 +49,7 @@ export default function Home() {
           <Shoes
             img={require("../../assets/2.png")}
             cost="R$280,90"
-            onClick={() => navigation.navigate("Detail")}
+            onClick={() => navigation.navigate("Produto2")}
           >
             Nike Downshifter 10
           </Shoes>
@@ -59,14 +59,14 @@ export default function Home() {
           <Shoes
             img={require("../../assets/3.png")}
             cost="R$560,90"
-            onClick={() => alert("CLICOU")}
+            onClick={() => navigation.navigate("Produto3")}
           >
             Nike Squidward Tentacles
           </Shoes>
           <Shoes
             img={require("../../assets/4.png")}
             cost="R$220"
-            onClick={() => alert("CLICOU")}
+            onClick={() => navigation.navigate("Produto4")}
           >
             Nike Epic React Flyknit 2
           </Shoes>
@@ -76,14 +76,14 @@ export default function Home() {
           <Shoes
             img={require("../../assets/5.png")}
             cost="R$120,90"
-            onClick={() => alert("CLICOU")}
+            onClick={() => navigation.navigate("Produto5")}
           >
             Nike Joyride Run Flyknit
           </Shoes>
           <Shoes
             img={require("../../assets/6.png")}
             cost="R$920"
-            onClick={() => alert("CLICOU")}
+            onClick={() => navigation.navigate("Produto6")}
           >
             Nike Air Max
           </Shoes>

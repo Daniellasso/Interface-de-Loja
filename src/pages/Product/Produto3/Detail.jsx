@@ -8,20 +8,20 @@ import {
   StyleSheet
 } from "react-native";
 
-import Dot from "../../components/Dot/Dot";
-import SizeButton from "../../components/SizeButton/SizeButton";
-import Button from "../../components/Button/Button";
-import Footer from "../../components/Footer/Footer";
+import Dot from "../../../components/Dot/Dot";
+import SizeButton from "../../../components/SizeButton/SizeButton";
+import Button from "../../../components/Button/Button";
+import Footer from "../../../components/Footer/Footer";
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
-    headerTitle: "Nike Downshifter 10"
+    headerTitle: "Nike Squidward Tentacles"
   });
 
   return (
     <ScrollView style={styles.container}>
       <Image
-        source={require("../../assets/detail.png")}
+        source={require("../../../assets/3.png")}
         style={styles.image}
         resizeMode="cover"
       />
@@ -32,7 +32,7 @@ export default function Detail({ navigation }) {
         </View>
         <View opacity={0.4}>
           <Text style={[styles.title, { fontSize: 30 }]}>
-            Nike Downshifter 10
+            Nike Squidward Tentacles
           </Text>
         </View>
 
@@ -55,12 +55,16 @@ export default function Detail({ navigation }) {
         </View>
 
         <View style={styles.textContent}>
-          <Text style={styles.textTitle}>Nike Downshifter 10</Text>
+          <Text style={styles.textTitle}>Nike Squidward Tentacles</Text>
           <Text style={styles.textContent}>
-            O Tênis Nike Masculino Downshifter 10 traz amortecimento e suporte
-            atualizados, para garantir uma corrida estável e confortável. Esse
-            tênis de corrida é confeccionado em material respirável, cabedal em
-            couro sintético
+            O Nike Squidward Tentacles é um tênis único e divertido, inspirado
+            no personagem popular da série animada "Bob Esponja". Com um design
+            criativo e detalhes divertidos, este tênis é ideal para quem deseja
+            se destacar e mostrar sua personalidade. Além disso, o Nike
+            Squidward Tentacles é confeccionado em material resistente e
+            durável, o que o torna uma ótima opção para uso diário. Seja para um
+            passeio casual ou para um dia especial, o Nike Squidward Tentacles é
+            o par de tênis perfeito para você expressar sua individualidade.
           </Text>
           <Text style={styles.textList}>- Categoria: Amortecimento</Text>
           <Text style={styles.textList}>- Material: Mesh</Text>
@@ -83,7 +87,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF"
   },
   image: {
-    width: "100%"
+    width: "100%",
+    height: 350
   },
   title: {
     fontFamily: "Anton_400Regular",

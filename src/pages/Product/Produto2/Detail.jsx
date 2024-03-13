@@ -8,10 +8,10 @@ import {
   StyleSheet
 } from "react-native";
 
-import Dot from "../../components/Dot/Dot";
-import SizeButton from "../../components/SizeButton/SizeButton";
-import Button from "../../components/Button/Button";
-import Footer from "../../components/Footer/Footer";
+import Dot from "../../../components/Dot/Dot";
+import SizeButton from "../../../components/SizeButton/SizeButton";
+import Button from "../../../components/Button/Button";
+import Footer from "../../../components/Footer/Footer";
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
@@ -21,7 +21,7 @@ export default function Detail({ navigation }) {
   return (
     <ScrollView style={styles.container}>
       <Image
-        source={require("../../assets/detail.png")}
+        source={require("../../../assets/detail.png")}
         style={styles.image}
         resizeMode="cover"
       />

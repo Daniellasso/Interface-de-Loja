@@ -15,13 +15,13 @@ import Footer from "../../components/Footer/Footer";
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
-    headerTitle: "Nike Downshifter 10"
+    headerTitle: "Nike Air Max Dia"
   });
 
   return (
     <ScrollView style={styles.container}>
       <Image
-        source={require("../../assets/detail.png")}
+        source={require("../../assets/1.png")}
         style={styles.image}
         resizeMode="cover"
       />
@@ -31,9 +31,7 @@ export default function Detail({ navigation }) {
           <Text style={[styles.title, { fontSize: 24 }]}>R$ 280,90</Text>
         </View>
         <View opacity={0.4}>
-          <Text style={[styles.title, { fontSize: 30 }]}>
-            Nike Downshifter 10
-          </Text>
+          <Text style={[styles.title, { fontSize: 30 }]}>Nike Air Max Dia</Text>
         </View>
 
         <View style={styles.dotContainer}>
@@ -55,12 +53,17 @@ export default function Detail({ navigation }) {
         </View>
 
         <View style={styles.textContent}>
-          <Text style={styles.textTitle}>Nike Downshifter 10</Text>
+          <Text style={styles.textTitle}>Nike Air Max Dia</Text>
           <Text style={styles.textContent}>
-            O Tênis Nike Masculino Downshifter 10 traz amortecimento e suporte
-            atualizados, para garantir uma corrida estável e confortável. Esse
-            tênis de corrida é confeccionado em material respirável, cabedal em
-            couro sintético
+            O Nike Air Max Dia é um tênis de corrida que oferece amortecimento e
+            suporte atualizados para garantir uma corrida estável e confortável.
+            Com seu design moderno e aerodinâmico, este tênis é ideal para quem
+            deseja se destacar enquanto pratica atividades desportivas. Além
+            disso, o Nike Air Max Dia é confeccionado em material respirável e
+            cabedal em couro sintético, o que o torna uma ótima opção para quem
+            procura um tênis durável e confortável. Seja no ginásio, na rua ou
+            em qualquer outro local, o Nike Air Max Dia é o par de tênis
+            perfeito para você atingir seus objetivos de fitness.
           </Text>
           <Text style={styles.textList}>- Categoria: Amortecimento</Text>
           <Text style={styles.textList}>- Material: Mesh</Text>
@@ -83,7 +86,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF"
   },
   image: {
-    width: "100%"
+    width: "100%",
+    height: 350
   },
   title: {
     fontFamily: "Anton_400Regular",

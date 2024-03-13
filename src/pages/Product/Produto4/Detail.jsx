@@ -8,20 +8,20 @@ import {
   StyleSheet
 } from "react-native";
 
-import Dot from "../../components/Dot/Dot";
-import SizeButton from "../../components/SizeButton/SizeButton";
-import Button from "../../components/Button/Button";
-import Footer from "../../components/Footer/Footer";
+import Dot from "../../../components/Dot/Dot";
+import SizeButton from "../../../components/SizeButton/SizeButton";
+import Button from "../../../components/Button/Button";
+import Footer from "../../../components/Footer/Footer";
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
-    headerTitle: "Nike Downshifter 10"
+    headerTitle: "Nike Epic React Flyknit 2"
   });
 
   return (
     <ScrollView style={styles.container}>
       <Image
-        source={require("../../assets/detail.png")}
+        source={require("../../../assets/4.png")}
         style={styles.image}
         resizeMode="cover"
       />
@@ -32,7 +32,7 @@ export default function Detail({ navigation }) {
         </View>
         <View opacity={0.4}>
           <Text style={[styles.title, { fontSize: 30 }]}>
-            Nike Downshifter 10
+            Nike Epic React Flyknit 2
           </Text>
         </View>
 
@@ -55,12 +55,17 @@ export default function Detail({ navigation }) {
         </View>
 
         <View style={styles.textContent}>
-          <Text style={styles.textTitle}>Nike Downshifter 10</Text>
+          <Text style={styles.textTitle}>Nike Epic React Flyknit 2</Text>
           <Text style={styles.textContent}>
-            O Tênis Nike Masculino Downshifter 10 traz amortecimento e suporte
-            atualizados, para garantir uma corrida estável e confortável. Esse
-            tênis de corrida é confeccionado em material respirável, cabedal em
-            couro sintético
+            O Nike Epic React Flyknit 2 é um tênis de corrida leve e reativo,
+            projetado para oferecer conforto e desempenho excelentes. Com sua
+            tecnologia avançada de amortecimento e suporte, este tênis é ideal
+            para corredores de longa distância que desejam uma experiência de
+            corrida suave e confortável. Além disso, o Nike Epic React Flyknit 2
+            é confeccionado em material respirável e leve, o que o torna uma
+            ótima opção para quem deseja um tênis leve e flexível. Seja no
+            asfalto ou no trilho, o Nike Epic React Flyknit 2 é o par de tênis
+            perfeito para você atingir seus objetivos de corrida.
           </Text>
           <Text style={styles.textList}>- Categoria: Amortecimento</Text>
           <Text style={styles.textList}>- Material: Mesh</Text>
@@ -83,7 +88,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF"
   },
   image: {
-    width: "100%"
+    width: "100%",
+    height: 350
   },
   title: {
     fontFamily: "Anton_400Regular",
